@@ -1,0 +1,654 @@
+/*document settings*/
+@font-face {
+    font-family: 'Teachers';
+    src: url("Teachers/Teachers-VariableFont_wght.ttf");
+    font-weight: weight;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Teachers", san-serif;
+    font-size: 29px;
+    color: #FFFCF4;
+    font-weight: 600;
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Teachers", san-serif;
+    font-size: 23px;
+    color: #FFFCF4;
+    font-weight: 600;
+    margin: 0px;
+}
+
+p {
+    font-family: "Teachers", san-serif;
+    font-size: 18px;
+    color: #FFFCF4;
+    font-weight: 400;
+    margin: 0px;
+}
+
+a {
+    color: #FFFCF4;
+}
+
+body {
+    background-color: #151515;
+    width: 390px;
+    margin: 0;
+    padding: 0;
+}
+
+/*top bar*/
+.phone-information {
+    height: 54px;
+    width: max-width;
+    margin-left: 40px;
+    margin-right: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+    #current-time {
+        color: #FFFCF4;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+.iphone-status-symbols {
+    text-align: right;
+}
+
+    #current-time, .iphone-status-symbols {
+        flex: 1;
+    }
+
+/*navigation menus*/
+.top-nav {
+    box-sizing: border-box;
+    background-color: #8A0F06;
+    height: 64px;
+    width: max-width;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items: center;
+}
+
+#back-button {
+    width: 42px;
+    height: 42px;
+}
+
+.bottom-nav {
+    box-sizing: border-box;
+    background-color: #8A0F06;
+    height: 91px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding-top: 12px;
+    border-top-color: #FF9992;
+    border-bottom-color: #8A0F06;
+    border-right-color: #8A0F06;
+    border-left-color: #8A0F06;
+    border-style: solid;
+}
+
+.bottom-nav-text {
+    font-size: 14px;
+    color: #FF9992;
+}
+
+.bottom-nav-homepage, .bottom-nav-search, .bottom-nav-favourites, .bottom-nav-profile {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*page header*/
+.header {
+    box-sizing: border-box;
+    background-image: url("event-page/keshi-header.jpg");
+    background-position: center;
+    background-size: cover;
+    width: max-width;
+    height: 300px;
+    padding-top: 157px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/*attendance and find a buddy*/
+.attending-find-a-buddy {
+    height: 42px;
+    width: max-width;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.event-attendees, .find-a-buddy-button {
+    flex: 2, 1;
+}
+
+.event-attendees {
+    height: 24px;
+    width: max-width;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+}
+
+.attending-profiles, #attending-numbers {
+    flex: 1;
+}
+
+.attending-profiles {
+    margin-right: 8px;
+}
+
+.find-a-buddy-button, #submit-fab-form {
+    box-sizing: border-box;
+    height: 42px;
+    width: 132px;
+    background-color: #8A0F06;
+    font-family: "Teachers", san-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFCF4;
+    border-color: none;
+    border-style: solid;
+    border-radius: 50px;
+    align-items: center;
+}
+
+#submit-fab-form {
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+/*event details*/
+.event-details {
+    margin-left: 16px;
+    margin-top: 20px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.venue, .date-and-time {
+    flex: 1;
+}
+
+.venue-name {
+    font-weight: 600;
+    color: #FFFCF4;
+}
+
+.venue-location {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.date-and-time {
+    text-align: right;
+}
+
+.event-day {
+    font-size: 14px;
+}
+
+/*page interaction buttons*/
+.interaction-buttons {
+    display: flex;
+    margin-left: 16px;
+    margin-top: 20px;
+    margin-right: 16px;
+    align-items: center;
+}
+
+.attending-button, .keshi-tour-website, .share-button {
+    flex: auto;
+}
+
+.attending-button {
+    box-sizing: border-box;
+    height: 42px;
+    width: 139px;
+    background-color: #151515;
+    font-family: "Teachers", san-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #03D5E8;
+    border-color: #03D5E8;
+    border-style: solid;
+    border-radius: 50px;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.attending-button:active {
+    box-sizing: border-box;
+    height: 42px;
+    width: 139px;
+    background-color: #027882;
+    font-family: "Teachers", san-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFCF4;
+    border-color: #027882;
+    border-style: solid;
+    border-radius: 50px;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.keshi-tour-website {
+    box-sizing: border-box;
+    height: 42px;
+    width: 163px;
+    background-color: #FFFCF4;
+    font-family: "Teachers", san-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #151515;
+    border-color: none;
+    border-style: solid;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.share-button {
+    box-sizing: border-box;
+    height: 42px;
+    width: 42px;
+    background-color: #151515;
+    border-color: none;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+/*page dropdowns*/
+.event-policies-dropdown {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map-transport-dropdown {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.event-policies-dropdown-summary {
+    box-sizing: border-box;
+    width: max-width;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left-color: #151515;
+    border-top-color: #FFFCF4;
+    border-right-color: #151515;
+    border-bottom-color: #151515;
+    border-style: solid;
+}
+
+.event-policies-dropdown-h3, .event-policies-dropdown-arrow {
+    flex: 1;
+}
+
+.event-policies-dropdown-arrow {
+    text-align: right;
+}
+
+.map-transport-dropdown-h3, .map-transport-dropdown-arrow {
+    flex: 2, 1;
+}
+
+.map-transport-dropdown-summary {
+    box-sizing: border-box;
+    width: max-width;
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left-color: #151515;
+    border-top-color: #FFFCF4;
+    border-right-color: #151515;
+    border-bottom-color: #151515;
+    border-style: solid;
+}
+
+.map-transport-dropdown-arrow {
+    text-align: right;
+    margin-left: 128px;
+}
+
+.event-policies-dropdown-bag-policy, .event-policies-dropdown-hours, .event-policies-dropdown-fnb, .map-transport-dropdown-map, .map-transport-dropdown-transport, .fab-questions {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.event-policies-dropdown-bp-text, .event-policies-dropdown-hours-text, .event-policies-dropdown-fnb-text, .map-transport-dropdown-transport-text {
+    margin-bottom: 16px;
+}
+
+.map-transport-dropdown-map-button {
+    box-sizing: border-box;
+    height: 42px;
+    width: auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #FFFCF4;
+    font-family: "Teachers", san-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #151515;
+    border-color: none;
+    border-style: solid;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.map-transport-dropdown-train-lines {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dropdown-bottom-line {
+    display: block;
+    height: 1px;
+    margin-left: 16px;
+    margin-top: 0;
+    margin-right: 16px;
+    color: #FFFCF4;
+}
+
+
+/*Find A Buddy Quiz elements*/
+.top-nav-fab {
+    box-sizing: border-box;
+    background-color: #8A0F06;
+    height: 64px;
+    width: max-width;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items: center;
+    display: flex;
+}
+
+#back-button-fab, #find-a-buddy-h3 {
+    flex: 1, 5;
+}
+
+#back-button-fab {
+    width: 42px;
+    height: 42px;
+    margin-right: 16px;
+}
+
+#find-a-buddy-h3 {
+    text-align: left;
+    font-weight: 400;
+    padding: none;
+}
+
+#find-a-buddy-explainer-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#find-a-buddy-preferences-title {
+    text-align: center;
+    margin-left: 16px;
+    margin-top: 20px;
+    margin-right: 16px;
+}
+
+.fab-questions {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+#consent-question {
+    color: #FF9992;
+}
+
+.question-options {
+    box-sizing: border-box;
+    width: max-width;
+    display: flex;
+    align-items: center;
+    margin: 16px;
+}
+
+#strongly-disagree, #disagree, #neutral, #agree, #strongly-agree {
+    flex: 1;
+    color: #8A0F06;
+}
+
+#strongly-disagree, #strongly-agree {
+    width: 44px;
+    height: 44px;
+}
+
+#disagree, #agree {
+    width: 32px;
+    height: 32px;
+}
+
+#neutral {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="radio"] {
+    accent-color: #8A0F06;
+}
+
+.option-labels {
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+}
+
+.option-label-left, .option-label-right {
+    flex: 1;
+}
+
+.option-label-left {
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    width: 50%;
+}
+
+.option-label-right {
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+    width: 50%;
+}
+
+.option-label-left-close, .option-label-right-close {
+    flex: 1;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    width: 50%;
+}
+
+.consent-question-disclaimer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-style: italic;
+    color: #C7C4BE;
+}
+
+.option-label-left-consent, .option-label-right-consent {
+    flex: 1;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    color: #FF9992;
+}
+
+#fab-end-text {
+    margin-left: 20px;
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.fab-feature-information {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#fab-feature-matches-h2 {
+    font-size: 23px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#fab-feature-matches-h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.top-4-matches {
+    text-align: center;
+}
+
+.matched-profile-one, .matched-profile-three {
+    display: flex;
+    background-image: url("match-results/find-a-buddy-ticket-beige.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: fit-content;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+}
+
+.match-pfp {
+    margin-right: 12px;
+}
+
+#fab-matches-h3-red {
+    font-size: 18px;
+    color: #8A0F06;
+}
+
+.fab-name-and-verification {
+    display: flex;
+    align-items: center;
+}
+
+#fab-matches-p-red {
+    font-size: 14px;
+    color: #8A0F06;
+    text-align: left;
+    padding-right: 4px;
+}
+
+.fab-age-and-location {
+    display: flex;
+    align-items: center;
+}
+
+.matched-profile-two, .matched-profile-four {
+    display: flex;
+    background-image: url("match-results/find-a-buddy-ticket-red.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: fit-content;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+}
+
+#fab-matches-h3-beige {
+    font-size: 18px;
+    color: #FFE9B6;
+}
+
+#fab-matches-p-beige {
+    font-size: 14px;
+    color: #FFE9B6;
+    text-align: left;
+    padding-right: 4px;
+}
+
+.match-compatability {
+    width: 150px;
+}
+
+.match-compatability-h2-red {
+    color: #8A0F06;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+#match-compatability-p-red {
+    color: #8A0F06;
+    font-size: 18px;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390px, initial-scale=1.0">
+    <title>Find A Buddy!</title>
+    <link rel="stylesheet" href="holdOn.css">
+</head>
+<body>
+    <!-- iphone status bar-->
+    <div class="phone-information">
+        <p id="current-time"></p>
+        <div class="iphone-status-symbols">
+            <img src="event-page/iphone status icons.png" alt="iPhone Status Icons" height="13px">
+        </div>
+    </div>
+
+    <!--top navigation bar-->
+    <div class="top-nav-fab">
+        <a href="index.html">
+            <img id="back-button-fab" src="event-page/arrow-left.png" alt="Arrow Left">
+        </a>
+        <h3 id="find-a-buddy-h3">Find A Buddy</h3>
+    </div>
+
+    <!--page header-->
+    <p id="find-a-buddy-explainer-text">Ever found yourself wishing you had bought the ticket to that concert your friends couldn’t make it to? <br><br>
+
+        ‘Find a Buddy’ is a feature for fans who love going to concerts but hate going alone. Fill out a quick preference form and get matched with other solo concert-goers from now until the start of your event.</p>
+
+    <h2 id="find-a-buddy-preferences-title">Choose Your Preferences</h2>
+
+    <!--find a buddy form-->
+    <div class="fab-form">
+        <form> <!--Q1-->
+            <p class="fab-questions">1. I am a big fan of this artist.</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="disagree" name="big-fan" value="Disagree">
+                <input type="radio" id="neutral" name="big-fan" value="Neutral">
+                <input type="radio" id="agree" name="big-fan" value="Agree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left">Strongly Disagree</p>
+                <p class="option-label-right">Strongly Agree</p>
+            </div>
+        </form>
+        
+        <form> <!--Q2-->
+            <p class="fab-questions">2. I have seen this artist in concert before.</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left-close">No</p>
+                <p class="option-label-right-close">Yes</p>
+            </div>
+        </form>
+
+        <form> <!--Q3-->
+            <p class="fab-questions">3. I prefer small venues (< 1000 capacity).</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="disagree" name="big-fan" value="Disagree">
+                <input type="radio" id="neutral" name="big-fan" value="Neutral">
+                <input type="radio" id="agree" name="big-fan" value="Agree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left">Strongly Disagree</p>
+                <p class="option-label-right">Strongly Agree</p>
+            </div>
+        </form>
+
+        <form> <!--Q4-->
+            <p class="fab-questions">4. I have been to a concert alone before.</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left-close">No</p>
+                <p class="option-label-right-close">Yes</p>
+            </div>
+        </form>
+
+        <form> <!--Q5-->
+            <p class="fab-questions">4. I (would) like to go to a concert alone.</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="disagree" name="big-fan" value="Disagree">
+                <input type="radio" id="neutral" name="big-fan" value="Neutral">
+                <input type="radio" id="agree" name="big-fan" value="Agree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left">Strongly Disagree</p>
+                <p class="option-label-right">Strongly Agree</p>
+            </div>
+        </form>
+
+        <form> <!--Q6-->
+            <p class="fab-questions">6. I prefer public transport over driving.</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="disagree" name="big-fan" value="Disagree">
+                <input type="radio" id="neutral" name="big-fan" value="Neutral">
+                <input type="radio" id="agree" name="big-fan" value="Agree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left">Strongly Disagree</p>
+                <p class="option-label-right">Strongly Agree</p>
+            </div>
+        </form>
+
+        <form> <!--Q7-->
+            <p class="fab-questions">7. I prefer rideshares over driving.</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="disagree" name="big-fan" value="Disagree">
+                <input type="radio" id="neutral" name="big-fan" value="Neutral">
+                <input type="radio" id="agree" name="big-fan" value="Agree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left">Strongly Disagree</p>
+                <p class="option-label-right">Strongly Agree</p>
+            </div>
+        </form>
+
+        <form> <!--Q4-->
+            <p class="fab-questions" id="consent-question">8. I concent to my profile being included in 'Find A Buddy' for this concert.</p>
+            <p class="consent-question-disclaimer">(You are only providing consent for this concert. To enroll in other concerts, please visit the event page and click on the ‘Find a Buddy’ button.)</p>
+            <div class="question-options">
+                <input type="radio" id="strongly-disagree" name="big-fan" value="Strongly Disagree">
+                <input type="radio" id="strongly-agree" name="big-fan" value="Strongly Agree">
+            </div>
+            <div class="option-labels">
+                <p class="option-label-left-consent">No</p>
+                <p class="option-label-right-consent">Yes</p>
+            </div>
+        </form>
+
+        <br><br>
+
+        <p id="fab-end-text">If no matches are currently available, we’ll be sure to send a notification when someone matches with you!</p>
+
+        <a href="holdOnFABSubmit.html">
+            <button id="submit-fab-form">Find Your Buddies!</button>
+        </a>
+    </div>
+
+    <br>
+
+    <script>
+        const currentTime = document.getElementById("current-time");
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            currentTime.textContent = `${hours}:${minutes}`;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+    </script>
+</body>
+</html>

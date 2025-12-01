@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390px, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="holdOn.css">
+</head>
+<body>
+    <!-- iphone status bar-->
+    <div class="phone-information">
+        <p id="current-time"></p>
+        <div class="iphone-status-symbols">
+            <img src="event-page/iphone status icons.png" alt="iPhone Status Icons" height="13px">
+        </div>
+    </div>
+
+    <div>
+        <img src="loading-gif/find-a-buddy-loading.gif" alt="Finding Matches Loading Gif" height="790px" width="393px">
+    </div>
+
+
+    <script>
+        const currentTime = document.getElementById("current-time");
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            currentTime.textContent = `${hours}:${minutes}`;
+        }
+        updateTime();
+
+    </script>
+
+    <script type="text/javascript">
+        setTimeout("window.location='holdOnFABMatches.html'",4700);
+    </script>
+</body>
+</html>
