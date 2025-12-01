@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390px, initial-scale=1.0">
+    <title>Keshi Concert</title>
+    <link rel="stylesheet" href="holdOn.css">
+</head>
+<body>
+    <!-- iphone status bar-->
+    <div class="phone-information">
+        <p id="current-time"></p>
+        <div class="iphone-status-symbols">
+            <img src="event-page/iphone status icons.png" alt="iPhone Status Icons" height="13px">
+        </div>
+    </div>
+
+    <!--top navigation bar-->
+    <div class="top-nav">
+        <img id="back-button" src="event-page/arrow-left.png" alt="Arrow Left">
+    </div>
+
+    <!--bottom navigation bar-->
+    <div class="bottom-nav">
+        <a class="bottom-nav-homepage" href="holdOnHome.html">
+            <img class="bottom-nav-icons" src="bottom-nav/home.png" alt="Homepage" height="26px">
+            <p class="bottom-nav-text">HOME</p>
+        </a>
+        <a class="bottom-nav-search" href="holdOnSearch.html">
+            <img class="bottom-nav-icons" src="bottom-nav/search.png" alt="Search Page" height="26px">
+            <p class="bottom-nav-text">SEARCH</p>
+        </a>
+        <a class="bottom-nav-favourites" href="holdOnFavourites.html">
+            <img class="bottom-nav-icons" src="bottom-nav/favourite.png" alt="Favourites" height="26px">
+            <p class="bottom-nav-text">FAVOURITES</p>
+        </a>
+        <a class="bottom-nav-profile" href="holdOnProfile.html">
+            <img class="bottom-nav-icons" src="bottom-nav/profile.png" alt="Profile Page" height="26px">
+            <p class="bottom-nav-text">PROFILE</p>
+        </a>
+    </div>
+
+    <!--header image and artist pfp + name-->
+    <div class="header">
+        <img src="event-page/keshi-pfp.png" alt="Keshi Profile Picture" width="80px" height="80px">
+        <h2>Keshi</h2>
+    </div>
+
+    <div class="attending-find-a-buddy">
+        <!--attending-->
+        <div class="event-attendees">
+            <div class="attending-profiles">
+                <img src="event-page/attending-profiles.png" alt="Attendees Profile Photos" height="24px">
+            </div>
+            <p id="attending-number">1301 attending</p>
+        </div>
+        <!--find a buddy button-->
+        <a href="holdOnFindABuddy.html">
+            <button class="find-a-buddy-button">Find a Buddy</button>
+        </a>
+    </div>
+
+    <!--event details-->
+    <div class="event-details">
+        <!--venue information-->
+        <div class="venue">
+            <p class="venue-name">Radio City Music Hall</p>
+            <p class="venue-location">1260 6th Ave, NYC</p>
+        </div>
+
+        <!--event date and time-->
+        <div class="date-and-time">
+            <p class="event-date-and-time">May 17, 8PM</p>
+            <p class="event-day">Saturday</p>
+        </div>
+    </div>
+
+    <!--interaction buttons-->
+    <div class="interaction-buttons">
+        <button class="attending-button">Attending?</button>
+        <a href="https://shop.keshimusic.com/pages/tour">
+            <button class="keshi-tour-website">Tour Website</button>
+        </a>
+        <button class="share-button">
+            <img src="event-page/share-button.png" alt="Share Button" width="42px" height="42px">
+        </button>
+    </div>
+
+    <!--event policies drop down-->
+    <details class="event-policies-dropdown">
+        <summary class="event-policies-dropdown-summary">
+            <h3 class="event-policies-dropdown-h3">Event Policies</h3>
+            <img class="event-policies-dropwdown-arrow" src="event-page/dropdown-arrow.png" alt="Dropdown Arrow" height="26px">
+        </summary>
+        <p class="event-policies-dropdown-bag-policy">Bag Policy</p>
+        <p class="event-policies-dropdown-bp-text">Bags do not have to be clear, but they must fit comfortably under your seat. Oversized bags larger than 22” x 14” x 9” are prohibited. Radio City Music Hall does not provide an area to check bags, coats or any other personal belongings.</p>
+        <p class="event-policies-dropdown-hours">Hours</p>
+        <p class="event-policies-dropdown-hours-text">The box office at Radio City Music Hall is open Monday through Saturday from noon to 6:00 p.m., and is closed on Sunday. <br> <br>
+            Additional Hours <br>
+            On all event days, the box office at Radio City Music Hall will remain open until 30 minutes after the event begins. If there is an event on Sunday, the box office will be open from noon until 30 minutes after the event begins. Please note, additional box office hours may vary. <br> <br>
+            For more information visit the <a href="https://www.msg.com/radio-city-music-hall/faqs#onsiteexperience">official venue website.</a></p>
+        <p class="event-policies-dropdown-fnb">Food and Beverage</p>
+        <p class="event-policies-dropdown-fnb-text">Food and beverage are available for purchase at Radio City. Please keep in mind that Radio City Music Hall is a cashless venue and only accepts credit/debit cards or mobile payment, including Google Pay and Apple Pay. A reverse ATM, which converts cash into a debit card, is located inside the venue for your convenience.</p>
+    </details>
+
+    <!--map and transport-->
+    <details class="map-transport-dropdown">
+        <summary class="map-transport-dropdown-summary">
+            <h3 class="map-transport-dropdown-h3">Map and Transport</h3>
+            <img class="map-transport-dropdown-arrow" src="event-page/dropdown-arrow.png" alt="Dropdown Arrow" height="26px">
+        </summary>
+        <p class="map-transport-dropdown-map">Map</p>
+        <button class="map-transport-dropdown-map-button">Find on Google Maps</button>
+        <p class="map-transport-dropdown-transport">How to Get There</p>
+        <img class="map-transport-dropdown-train-lines" src="event-page/train-lines.png" alt="NYC Subway Line Icons" height="20pxs">
+        <p class="map-transport-dropdown-transport-text">Take the B, D, F, or M train to 47-50th Sts Rockefeller Ctr Station. Exit via the 6th Ave 48th St NE corner and walk two blocks north to reach the venue. <br><br>
+            or<br><br>
+            Take the 1 train to the 50th St Station. Exit via the Broadway-50th St SE corner and walk one block east to reach the venue.<br><br>
+            or<br><br>
+            Take the N, R, or W train to 49 St Station. Exit via the 7th Ave-49th St NW corner and walk one block east, one block north to reach the venue.<br><br>
+            Find parking for your event through SpotHero, the Official Parking App of Radio City Music Hall, and book your space today. Click <a href="https://spothero.app.link/ts1p2NqSe1?kind=destination&id=803&$3p=a_hasoffers&$affiliate_json=http%3A%2F%2Ftracking.spothero.com%2Faff_c%3Foffer_id%3D1%26aff_id%3D1478%26file_id%3D28%26source%3Dradiocitymusichall%26aff_sub%3D4%26aff_sub2%3Dfaqpage%26format%3Djson">here</a> to explore nearby garage and lot locations.</p>
+    </details>
+
+    <hr class="dropdown-bottom-line">
+
+    <!--page padding-->
+    <br><br><br><br><br>
+
+
+    <script>
+        const currentTime = document.getElementById("current-time");
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            currentTime.textContent = `${hours}:${minutes}`;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
