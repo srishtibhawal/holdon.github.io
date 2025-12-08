@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390px, initial-scale=1.0">
+    <title>Find A Buddy!</title>
+    <link rel="stylesheet" href="holdOn.css">
+</head>
+<body>
+    <!-- iphone status bar-->
+    <div class="phone-information">
+        <p id="current-time"></p>
+        <div class="iphone-status-symbols">
+            <img src="event-page/iphone status icons.png" alt="iPhone Status Icons" height="13px">
+        </div>
+    </div>
+
+    <!--top navigation bar-->
+    <div class="top-nav-fab">
+        <a href="holdOnFABMatches.html">
+            <img id="back-button-fab" src="event-page/arrow-left.png" alt="Arrow Left">
+        </a>
+        <h3 id="find-a-buddy-h3">Return to Results</h3>
+    </div>
+
+    <!--bottom navigation bar-->
+    <div class="bottom-nav">
+        <a class="bottom-nav-homepage" href="holdOnHome.html">
+            <img class="bottom-nav-icons" src="bottom-nav/home.png" alt="Homepage" height="26px">
+            <p class="bottom-nav-text">HOME</p>
+        </a>
+        <a class="bottom-nav-search" href="holdOnSearch.html">
+            <img class="bottom-nav-icons" src="bottom-nav/search.png" alt="Search Page" height="26px">
+            <p class="bottom-nav-text">SEARCH</p>
+        </a>
+        <a class="bottom-nav-favourites" href="holdOnFavourites.html">
+            <img class="bottom-nav-icons" src="bottom-nav/favourite.png" alt="Favourites" height="26px">
+            <p class="bottom-nav-text">FAVOURITES</p>
+        </a>
+        <a class="bottom-nav-profile" href="holdOnProfile.html">
+            <img class="bottom-nav-icons" src="bottom-nav/profile.png" alt="Profile Page" height="26px">
+            <p class="bottom-nav-text">PROFILE</p>
+        </a>
+    </div>
+
+    <!--compatability banner-->
+    <div class="compatability-banner">
+        <p class="match-compatability-p-red">You and Danny have an <strong>68% compatability</strong>!</p>
+    </div>
+
+    <!--page break-->
+    <br>
+
+    <!--profile-->
+    <div class="profile-ticket-top">
+        <div class="identifying-information">
+            <div class="profile-information">
+                <div class="profile-name-and-verification">
+                    <div class="profile-name-and-username">
+                        <h2 class="profile-h2-red">Danny R.</h2>
+                    </div>
+                    <p class="match-profile-p-red">@dantheman</p>
+                </div>
+                <div class="match-profile-details">
+                    <div class="profile-particulars">
+                        <img class="profile-icons" src="profile/profile-icon-age.png" alt="Birthday Cake Icon for Age" height="16px" width="16px">
+                        <p class="match-profile-p-red">Age 24</p>
+                    </div>
+                    <div class="profile-particulars">
+                        <img class="profile-icons" src="profile/profile-icon-pronouns.png" alt="Person Icon for Pronouns" height="16px" width="16px">
+                        <p class="match-profile-p-red">he/him/his</p>
+                    </div>
+                    <div class="profile-particulars">
+                        <img class="profile-icons" src="profile/profile-icon-location.png" alt="Pin Icon for Location" height="16px" width="16px">
+                        <p class="match-profile-p-red">New York City, NY</p>
+                    </div>
+                </div>
+            </div>
+            <img class="profile-pfp" src="match-results/avatar-danny.png" alt="Match #3 Profile Photo" width="120px" height="120">
+        </div>
+
+        <div class="profile-numbers">
+            <div class="profile-number">
+                <h2 class="profile-h2a">18</h2>
+                <p class="match-profile-p-red">following</p>
+            </div>
+            <div class="profile-number">
+                <h2 class="profile-h2a">12</h2>
+                <p class="match-profile-p-red">concerts</p>
+            </div>
+            <div class="profile-number">
+                <h2 class="profile-h2a">3</h2>
+                <p class="match-profile-p-red">posts</p>
+            </div>
+        </div>
+
+        <div class="profile-social-section">
+            <h2 class="profile-h2-red">Connect through social media:</h2>
+            <div class="profile-socials">
+                <button class="profile-social-media">Instagram</button>
+                <button class="profile-social-media">TikTok</button>
+            </div>
+        </div>
+    </div>
+
+    <!--ticket tearable part-->
+    <div class="profile-ticket-middle"></div>
+    <div class="profile-ticket-tear-line"></div>
+    <div class="profile-ticket-middle"></div>
+
+    <div class="profile-ticket-bottom">
+        <h2 class="profile-h2a">Favourite Artists</h2>
+        <div class="profile-favourites">
+            <p class="match-profile-p">Heize</p>
+            <p class="match-profile-p">5 Seconds of Summer</p>
+            <p class="match-profile-p">kanegi.</p>
+            <p class="match-profile-p">P1Harmony</p>
+            <p class="match-profile-p">Keshi</p>
+        </div>
+
+        <h2 class="profile-h2a">Favourite Venues</h2>
+        <div class="profile-favourites">
+            <p class="match-profile-p">Brooklyn Steel</p>
+            <p class="match-profile-p">Theater at MSG</p>
+            <p class="match-profile-p">Baby's All Right</p>
+        </div>
+
+        <h2 class="profile-h2a">Shared Media</h2>
+        <img class="profile-shared-photos" src="profile/danny-photos.png" alt="Images uploaded by Danny to Hold On">
+        </div>
+    </div>
+
+    <!--page padding-->
+    <br><br><br><br><br><br>
+
+
+    <script>
+        const currentTime = document.getElementById("current-time");
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            currentTime.textContent = `${hours}:${minutes}`;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+    </script>
+</body>
+</html>
