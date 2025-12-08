@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390px, initial-scale=1.0">
+    <title>Find A Buddy!</title>
+    <link rel="stylesheet" href="holdOn.css">
+</head>
+<body>
+    <!-- iphone status bar-->
+    <div class="phone-information">
+        <p id="current-time"></p>
+        <div class="iphone-status-symbols">
+            <img src="event-page/iphone status icons.png" alt="iPhone Status Icons" height="13px">
+        </div>
+    </div>
+
+    <!--top navigation bar-->
+    <div class="top-nav-fab">
+        <a href="index.html">
+            <img id="back-button-fab" src="event-page/arrow-left.png" alt="Arrow Left">
+        </a>
+        <h3 id="find-a-buddy-h3">Find A Buddy</h3>
+    </div>
+
+    <!--bottom navigation bar-->
+    <div class="bottom-nav">
+        <a class="bottom-nav-homepage" href="holdOnHome.html">
+            <img class="bottom-nav-icons" src="bottom-nav/home.png" alt="Homepage" height="26px">
+            <p class="bottom-nav-text">HOME</p>
+        </a>
+        <a class="bottom-nav-search" href="holdOnSearch.html">
+            <img class="bottom-nav-icons" src="bottom-nav/search.png" alt="Search Page" height="26px">
+            <p class="bottom-nav-text">SEARCH</p>
+        </a>
+        <a class="bottom-nav-favourites" href="holdOnFavourites.html">
+            <img class="bottom-nav-icons" src="bottom-nav/favourite.png" alt="Favourites" height="26px">
+            <p class="bottom-nav-text">FAVOURITES</p>
+        </a>
+        <a class="bottom-nav-profile" href="holdOnProfile.html">
+            <img class="bottom-nav-icons" src="bottom-nav/profile.png" alt="Profile Page" height="26px">
+            <p class="bottom-nav-text">PROFILE</p>
+        </a>
+    </div>
+
+    <!--feature information-->
+    <div class="fab-feature-information">
+        <img src="match-results/tara.png" alt="Hold On Mascot Tara" height="max-content" width="171px">
+        <h2 id="fab-feature-matches-h2">Meet Your Top 4 Matches!</h2>
+        <h3 id="fab-feature-matches-h3">Click on a ticket to view the profile.</h3>
+        <p>If you like what you see, connect with them on socials.</p>
+    </div>
+
+    <!--matches-->
+    <div class="top-4-matches">
+        <a class="profile-links" href="holdOnFABMatch1.html">
+            <div class="matched-profile-one">
+                <img class="match-pfp" src="match-results/avatar-alex.png" alt="Match #1 Profile Photo" width="67px" height="max-content">
+                <div class="matched-profile-information">
+                    <div class="fab-name-and-verification">
+                        <h3 class="fab-matches-h3-red">Alex C.</h3>
+                        <img src="match-results/verification-red.png" alt="Verified Profile Icon" height="22px" width="22px">
+                    </div>
+                    <div class="fab-age-and-location">
+                        <p class="fab-matches-p-red">Age 26</p>
+                        <p class="fab-matches-p-red">|</p>
+                        <p class="fab-matches-p-red">NYC</p>
+                    </div>
+                    <p class="fab-matches-p-red">she/her/hers</p>
+                </div>
+                <div class="match-compatability">
+                    <h2 class="match-compatability-h3-red">82%</h2>
+                    <p class="match-compatability-p-red">compatible with your preferences!</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="profile-links" href="holdOnFABMatch2.html">
+            <div class="matched-profile-two">
+                <img class="match-pfp" src="match-results/avatar-payal.png" alt="Match #2 Profile Photo" width="67px" height="max-content">
+                <div class="matched-profile-information">
+                    <div class="fab-name-and-verification">
+                        <h3 class="fab-matches-h3-beige">Payal M.</h3>
+                        <img src="match-results/verification-beige.png" alt="Verified Profile Icon" height="22px" width="22px">
+                    </div>
+                    <div class="fab-age-and-location">
+                        <p class="fab-matches-p-beige">Age 29</p>
+                        <p class="fab-matches-p-beige">|</p>
+                        <p class="fab-matches-p-beige">NYC</p>
+                    </div>
+                    <p class="fab-matches-p-beige">she/they</p>
+                </div>
+                <div class="match-compatability">
+                    <h2 class="match-compatability-h3-beige">74%</h2>
+                    <p class="match-compatability-p-beige">compatible with your preferences!</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="profile-links" href="holdOnFABMatch3.html">
+            <div class="matched-profile-three">
+                <img class="match-pfp" src="match-results/avatar-danny.png" alt="Match #3 Profile Photo" width="67px" height="max-content">
+                <div class="matched-profile-information">
+                    <div class="fab-name-and-verification">
+                        <h3 class="fab-matches-h3-red">Danny R.</h3>
+                    </div>
+                    <div class="fab-age-and-location">
+                        <p class="fab-matches-p-red">Age 24</p>
+                        <p class="fab-matches-p-red">|</p>
+                        <p class="fab-matches-p-red">NYC</p>
+                    </div>
+                    <p class="fab-matches-p-red">he/him/his</p>
+                </div>
+                <div class="match-compatability">
+                    <h2 class="match-compatability-h3-red">68%</h2>
+                    <p class="match-compatability-p-red">compatible with your preferences!</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="profile-links" href="holdOnFABMatch4.html">
+            <div class="matched-profile-four">
+                <img class="match-pfp" src="match-results/avatar-amira.png" alt="Match #4 Profile Photo" width="67px" height="max-content">
+                <div class="matched-profile-information">
+                    <div class="fab-name-and-verification">
+                        <h3 class="fab-matches-h3-beige">Amira P.</h3>
+                        <img src="match-results/verification-beige.png" alt="Verified Profile Icon" height="22px" width="22px">
+                    </div>
+                    <div class="fab-age-and-location">
+                        <p class="fab-matches-p-beige">Age 27</p>
+                        <p class="fab-matches-p-beige">|</p>
+                        <p class="fab-matches-p-beige">NYC</p>
+                    </div>
+                    <p class="fab-matches-p-beige">she/her/hers</p>
+                </div>
+                <div class="match-compatability">
+                    <h2 class="match-compatability-h3-beige">64%</h2>
+                    <p class="match-compatability-p-beige">compatible with your preferences!</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--end text-->
+    <div class="fab-feature-information">
+        <h3 id="fab-feature-matches-h3">Don't see a match you like?</h3>
+        <p>Return later to view any new matches. ‘Find a Buddy’ will keep matching you with buddies as more people submit their preferences.</p>
+    </div>
+
+    <!--page padding-->
+    <br><br><br><br><br>
+
+
+    <script>
+        const currentTime = document.getElementById("current-time");
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            currentTime.textContent = `${hours}:${minutes}`;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
